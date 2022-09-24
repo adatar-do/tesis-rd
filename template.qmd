@@ -1,0 +1,54 @@
+---
+title: "Tesis-RD"
+subtitle: "A Quarto Extension"
+author: 
+    - name: "Daniel E. de la Rosa"
+      id: 1041951
+advisers: 
+    - "Juan Samuel Pérez Rodríguez"
+area: Área de ingenierías
+program: "Maestría en Ciencia de Datos (MCD)"
+degree: "Magíster en Ciencia de Datos"
+abstracts:
+    - title: Resumen
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin ligula eu leo tincidunt, quis scelerisque magna dapibus. Sed eget ipsum vel arcu vehicula ullamcorper"
+      keywords:
+        - title: "Palabras clave"
+          content: "Visión computacional, georreferenciación"
+    - title: Abstract
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin ligula eu leo tincidunt, quis scelerisque magna dapibus. Sed eget ipsum vel arcu vehicula ullamcorper"
+      keywords:
+        - title: "Keywords"
+          content: "Computer vision, georeferencing"
+date: today
+format:
+  intec-html: default
+  intec-docx: default
+bibliography: bibliografia.bib
+---
+
+
+
+# Introducción
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin ligula eu leo tincidunt, quis scelerisque magna dapibus. Sed eget ipsum vel arcu vehicula ullamcorper. Sed euismod, nisl vitae aliquam lacinia, nisl nisl aliquet nisl, nec aliquet nisl nisl vel nisl. Sed euismod, nisl vitae aliquam lacinia, nisl nisl aliquet nisl, nec aliquet nisl nisl vel nisl. Sed euismod, nisl vitae aliquam lacinia, nisl nisl aliquet nisl, nec aliquet nisl nisl vel nisl. Sed euismod, nisl vitae aliquam lacinia, nisl nisl aliquet nisl, nec aliquet nisl nisl vel nisl. Sed euismod, nisl vitae aliquam lacinia, nisl nisl aliquet nisl, nec aliquet nisl nisl vel nisl. Sed euismod, nisl vitae aliquam lacinia, nisl nisl aliquet nisl, nec aliquet nisl nisl vel nisl. Sed euismod, nisl vitae aliquam lacinia, nisl nisl aliquet nisl, nec aliquet nisl nisl vel nisl. Sed euismod, nisl vitae aliquam lacinia, nisl nisl aliquet nisl, nec aliquet nisl nisl vel nisl. Sed euismod, nisl vitae aliquam lacinia, nisl nisl aliquet nisl, nec aliquet nisl nisl vel nisl. Sed euismod, nisl vitae aliquam lacinia, nisl nisl aliquet nisl, nec aliquet nisl nisl vel nisl. Sed euismod, nisl vitae aliquam lacinia, nisl nisl aliquet nisl, nec aliquet nisl nisl vel nisl. Sed euismod, nisl vitae aliquam lacinia, nisl nisl aliquet nisl, nec aliquet nisl nisl vel nisl. Sed euismod, nisl vitae aliquam lacinia, nisl nisl aliquet nisl, nec aliquet nisl nisl vel nisl. Sed euismod, nisl vitae aliquam
+
+# Planteamiento del problema
+
+## Objetivo general
+
+## Objetivos específicos
+
+## Justificación
+
+## Alcance 
+
+# Marco teórico/conceptual
+
+# Metodología
+
+# Resultados
+
+# Conclusiones
+
+# Bibliografía {-}

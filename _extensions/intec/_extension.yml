@@ -1,0 +1,18 @@
+title: Tesis INTEC
+author: 
+  - name: Daniel E. de la Rosa
+    id: 1041951
+version: 1.0.0
+contributes:
+  formats:
+    html:
+      toc: true
+      number-sections: true
+      csl: apa-numeric-superscript-brackets.csl
+    pdf: default
+    docx:
+      filters: [cover.lua, summary.lua, tocs.lua, header.lua, footer.lua]
+      reference-doc: custom-reference-doc.docx
+      csl: apa-numeric-superscript-brackets.csl
+      toc: false
+      number-sections: true
