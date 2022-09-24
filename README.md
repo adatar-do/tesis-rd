@@ -63,7 +63,7 @@ bibliography: bibliografia.bib
 
 Note que el argumento `format` tiene dos formatos:
 
-- `intec-html`: para generar el documento en formato HTML que puede ir vizualizando mientras escribe su tesis.
+- `intec-html`: para generar el documento en formato HTML que puede ir visualizando mientras escribe su tesis.
 - `intec-docx`: para generar el documento en formato DOCX que puede enviar a la institución para su revisión.
 
 > Asegúrese de colocar el formato intec-docx primero cuando quiera generar el documento final.
@@ -80,11 +80,11 @@ Este proyecto está bajo la licencia MIT. Consulte el archivo [LICENSE](LICENSE)
 
 Las contribuciones son lo que hacen que la comunidad de código abierto sea un lugar increíble para aprender, inspirar y crear. Cualquier contribución que hagas es **muy apreciada**.
 
->  La más básica contribución que puedes hacer es regalar una estrella a este proyecto. :star:
+>  La contribución más básica que puedes hacer es regalar una estrella a este proyecto. :star:
 
 Pero, si quieres contribuir de forma más activa, puedes hacerlo de las siguientes maneras:
 
-1. Asegúrese de entender como crear una extensión para Quarto [aquí](https://quarto.org/docs/extensions/formats.html).
+1. Asegúrese de entender cómo crear una extensión para Quarto [aquí](https://quarto.org/docs/extensions/formats.html).
 1. Haga un fork del proyecto
 2. Cree una rama con el nombre de la tesis que deseas agregar (`git checkout -b XXXX`)
 3. Confirme sus cambios (`git commit -m 'tesis-XXXX agregada'`)
