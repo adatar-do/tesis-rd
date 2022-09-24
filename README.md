@@ -104,9 +104,9 @@ Pero, si quieres contribuir de forma más activa, puedes hacerlo de las siguient
 
 ## INTEC
 
-![INTEC](https://raw.githubusercontent.com/adatar-do/tesis-rd/main/images/intec-1.png)
+![INTEC](https://raw.githubusercontent.com/adatar-do/tesis-rd/main/images/intec1.png)
 
-![INTEC](https://raw.githubusercontent.com/adatar-do/tesis-rd/main/images/intec-2.png)
+![INTEC](https://raw.githubusercontent.com/adatar-do/tesis-rd/main/images/intec2.png)
 
 
 # Tesis disponibles
