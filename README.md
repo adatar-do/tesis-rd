@@ -1,8 +1,8 @@
 # Tesis RD (extensión para [Quarto](https://quarto.org/))
 
-<!-- Badges -->
-<!-- [![GitHub release (latest by date)](https://img.shields.io/github/v/release/adatar-do/tesis-rd)]() -->
-<!-- [![GitHub Release Date](https://img.shields.io/github/release-date/adatar-do/tesis-rd)]() -->
+<!-- BADGES -->
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/adatar-do/tesis-rd)]()
+[![GitHub Release Date](https://img.shields.io/github/release-date/adatar-do/tesis-rd)]()
 [![GitHub Repo stars](https://img.shields.io/github/stars/adatar-do/tesis-rd?style=social)]()
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![GitHub issues](https://img.shields.io/github/issues/adatar-do/tesis-rd)]()
