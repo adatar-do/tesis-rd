@@ -1,4 +1,4 @@
-# Tesis RD: que el formato no sea un problema
+# Tesis RD: que el formato no sea un problema y el código no te quite el sueño
 
 > Extensión para [Quarto](https://quarto.org/)
 
@@ -16,6 +16,10 @@
 <hr />
 
 `tesis-rd` facilita la utilización de Quarto para la generación de tesis con los formatos de las distintas instituciones de educación superior de República Dominicana.
+
+Al utilizar `tesis-rd` no tendrás que preocuparte por el formato de la tesis, ya que este se encarga de generarla en el formato requerido por la institución de educación superior que elijas, cada vez que generes el documento.
+
+Además, al estar basado en Quarto, `tesis-rd` te permite utilizar programación literaria para generar tus gráficos, tablas y demás elementos de la tesis, con todos los beneficios que esto conlleva.
 
 Los siguientes formatos están disponibles:
 
