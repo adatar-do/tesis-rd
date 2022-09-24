@@ -1,4 +1,8 @@
-# Tesis RD (extensión para [Quarto](https://quarto.org/))
+# Tesis RD: que el formato no sea un problema
+
+> Extensión para [Quarto](https://quarto.org/)
+
+<hr/>
 
 <!-- BADGES -->
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/adatar-do/tesis-rd?include_prereleases)]()
@@ -9,11 +13,13 @@
 [![GitHub contributors](https://img.shields.io/github/contributors/adatar-do/tesis-rd)]()
 <!-- END BADGES -->
 
-Esta extensión facilita la utilización de Quarto para la generación de tesis de las distintas instituciones de educación superior de República Dominicana.
+<hr />
+
+`tesis-rd` facilita la utilización de Quarto para la generación de tesis con los formatos de las distintas instituciones de educación superior de República Dominicana.
 
 Los siguientes formatos están disponibles:
 
-- [Instituto Tecnológico de Santo Domingo (INTEC)](https://github.com/dnldelarosa/tesis-maestria-ciencia-datos)
+- [Instituto Tecnológico de Santo Domingo (INTEC)](https://github.com/adatar-do/tesis-rd#intec)
     - Author: [Daniel E. de la Rosa](https://dnldelarosa.com/)
 
 ## Instalación
@@ -55,9 +61,9 @@ abstracts:
           content: "Computer vision, georeferencing"
 date: today
 format:
-  intec-html: default
   intec-docx: default
-bibliography: bibliografia.bib
+  intec-html: default
+bibliography: bibliography.bib
 ---
 ```
 
@@ -66,7 +72,7 @@ Note que el argumento `format` tiene dos formatos:
 - `intec-html`: para generar el documento en formato HTML que puede ir visualizando mientras escribe su tesis.
 - `intec-docx`: para generar el documento en formato DOCX que puede enviar a la institución para su revisión.
 
-> Asegúrese de colocar el formato intec-docx primero cuando quiera generar el documento final.
+> Asegúrese de colocar el formato intec-docx primero cuando quiera generar el documento final. <!-- Además de cambiar el argumento `draft` a `false` para eliminar la marca de agua del documento. -->
 
 ### Tabla de contenidos
 
@@ -94,3 +100,17 @@ Pero, si quieres contribuir de forma más activa, puedes hacerlo de las siguient
 > **Nota**: Si no está seguro de cómo hacerlo, puede abrir un problema (issue) [en el repositorio](https://github.com/adatar-do/tesis-rd/issues) y alguien lo hará por usted. ¡Esa es la magia de la comunidad de código abierto!
 
 
+# Ejemplos
+
+## INTEC
+
+![INTEC](https://raw.githubusercontent.com/adatar-do/tesis-rd/main/images/intec-1.png)
+
+![INTEC](https://raw.githubusercontent.com/adatar-do/tesis-rd/main/images/intec-2.png)
+
+
+# Tesis disponibles
+
+## INTEC
+
+- [de la Rosa, D. & Pérez, J. (2022). Georreferenciación de imágenes utilizando visión computacional: el caso del mapa de la República Dominicana. [Trabajo final de maestría, Instituto Tecnológico de Santo Domingo (INTEC)]. https://github.com/dnldelarosa/tesis-maestria-ciencia-datos](https://github.com/dnldelarosa/tesis-maestria-ciencia-datos)

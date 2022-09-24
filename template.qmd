@@ -5,7 +5,7 @@ author:
     - name: "Daniel E. de la Rosa"
       id: 1041951
 advisers: 
-    - "Juan Samuel Pérez Rodríguez"
+    - "Juan Pérez"
 area: Área de ingenierías
 program: "Maestría en Ciencia de Datos (MCD)"
 degree: "Magíster en Ciencia de Datos"
@@ -22,16 +22,16 @@ abstracts:
           content: "Computer vision, georeferencing"
 date: today
 format:
-  intec-html: default
   intec-docx: default
-bibliography: bibliografia.bib
+  intec-html: default
+bibliography: bibliography.bib
 ---
 
 
 
 # Introducción
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin ligula eu leo tincidunt, quis scelerisque magna dapibus. Sed eget ipsum vel arcu vehicula ullamcorper. Sed euismod, nisl vitae aliquam lacinia, nisl nisl aliquet nisl, nec aliquet nisl nisl vel nisl. Sed euismod, nisl vitae aliquam lacinia, nisl nisl aliquet nisl, nec aliquet nisl nisl vel nisl. Sed euismod, nisl vitae aliquam lacinia, nisl nisl aliquet nisl, nec aliquet nisl nisl vel nisl. Sed euismod, nisl vitae aliquam lacinia, nisl nisl aliquet nisl, nec aliquet nisl nisl vel nisl. Sed euismod, nisl vitae aliquam lacinia, nisl nisl aliquet nisl, nec aliquet nisl nisl vel nisl. Sed euismod, nisl vitae aliquam lacinia, nisl nisl aliquet nisl, nec aliquet nisl nisl vel nisl. Sed euismod, nisl vitae aliquam lacinia, nisl nisl aliquet nisl, nec aliquet nisl nisl vel nisl. Sed euismod, nisl vitae aliquam lacinia, nisl nisl aliquet nisl, nec aliquet nisl nisl vel nisl. Sed euismod, nisl vitae aliquam lacinia, nisl nisl aliquet nisl, nec aliquet nisl nisl vel nisl. Sed euismod, nisl vitae aliquam lacinia, nisl nisl aliquet nisl, nec aliquet nisl nisl vel nisl. Sed euismod, nisl vitae aliquam lacinia, nisl nisl aliquet nisl, nec aliquet nisl nisl vel nisl. Sed euismod, nisl vitae aliquam lacinia, nisl nisl aliquet nisl, nec aliquet nisl nisl vel nisl. Sed euismod, nisl vitae aliquam lacinia, nisl nisl aliquet nisl, nec aliquet nisl nisl vel nisl. Sed euismod, nisl vitae aliquam
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. [@quarto] Phasellus sollicitudin ligula eu leo tincidunt, quis scelerisque magna dapibus. Sed eget ipsum vel arcu vehicula ullamcorper. Sed euismod, nisl vitae aliquam lacinia, nisl nisl aliquet nisl, nec aliquet nisl nisl vel nisl. Sed euismod, nisl vitae aliquam lacinia, nisl nisl aliquet nisl, nec aliquet nisl nisl vel nisl. Sed euismod, nisl vitae aliquam lacinia, nisl nisl aliquet nisl, nec aliquet nisl nisl vel nisl. Sed euismod, nisl vitae aliquam lacinia, nisl nisl aliquet nisl, nec aliquet nisl nisl vel nisl. Sed euismod, nisl vitae aliquam lacinia, nisl nisl aliquet nisl, nec aliquet nisl nisl vel nisl. Sed euismod, nisl vitae aliquam lacinia, nisl nisl aliquet nisl, nec aliquet nisl nisl vel nisl. Sed euismod, nisl vitae aliquam lacinia, nisl nisl aliquet nisl, nec aliquet nisl nisl vel nisl. Sed euismod, nisl vitae aliquam lacinia, nisl nisl aliquet nisl, nec aliquet nisl nisl vel nisl. Sed euismod, nisl vitae aliquam lacinia, nisl nisl aliquet nisl, nec aliquet nisl nisl vel nisl. Sed euismod, nisl vitae aliquam lacinia, nisl nisl aliquet nisl, nec aliquet nisl nisl vel nisl. Sed euismod, nisl vitae aliquam lacinia, nisl nisl aliquet nisl, nec aliquet nisl nisl vel nisl. Sed euismod, nisl vitae aliquam lacinia, nisl nisl aliquet nisl, nec aliquet nisl nisl vel nisl. Sed euismod, nisl vitae aliquam lacinia, nisl nisl aliquet nisl, nec aliquet nisl nisl vel nisl. Sed euismod, nisl vitae aliquam. [@tesisrd]
 
 # Planteamiento del problema
 
