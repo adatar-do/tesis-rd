@@ -1,6 +1,6 @@
 ---
-title: "Tesis-RD"
-subtitle: "A Quarto Extension"
+title: "Tesis-RD: A Quarto Extension"
+subtitle: "Que el formato no sea un problema y el código no te quite el sueño"
 author: 
     - name: "Daniel E. de la Rosa"
       id: 1041951
