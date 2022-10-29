@@ -34,11 +34,15 @@ Si ya iniciaste tu proyecto, ejecute el siguiente comando en la línea de comand
 quarto install extension adatar-do/tesis-rd
 ```
 
-Si no has iniciado tu proyecto puedes clonar este repositorio y comenzar a trabar con el documento `template.qmd`.
+Si no has iniciado tu proyecto aún, puedes hacerlo con el siguiente comando:
+
+```bash
+quarto use template adatar-do/tesis-rd
+```
 
 ## Uso
 
-Si clonaste este repositorio, puedes comenzar a trabajar con el documento `template.qmd` y reemplazar las partes correspondientes. Si ya habías comenzado tu trabajo, cambiar el header del documento a:
+Si clonaste este repositorio, puedes comenzar a trabajar con el documento `template.qmd` y reemplazar las partes correspondientes. Si ya habías comenzado tu trabajo, cambia el header del documento a:
 
 ```yaml
 ---
