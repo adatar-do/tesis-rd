@@ -28,6 +28,8 @@ Los siguientes formatos están disponibles:
 
 ## Instalación
 
+> Quarto introdujo muchos cambios en el API de las extensiones en la versión 1.2.0. Esta versión de `tesis-rd` es compatible con Quarto 1.2.0 o superior.
+
 Si ya iniciaste tu proyecto, ejecute el siguiente comando en la línea de comandos:
 
 ```bash
