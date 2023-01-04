@@ -1,3 +1,8 @@
+QUITA EL CÓDIGO DEL TEMPLATE
+
+
+
+
 # Tesis RD: que el formato no sea un problema y el código no te quite el sueño
 
 > Extensión para [Quarto](https://quarto.org/)
@@ -53,8 +58,8 @@ subtitle: "A Quarto Extension"
 author: 
     - name: "Daniel E. de la Rosa"
       id: 1041951
-advisers: 
-    - "Juan Samuel Pérez Rodríguez"
+    - name: "Juan Samuel Pérez Rodríguez"
+      id: false
 area: Área de ingenierías
 program: "Maestría en Ciencia de Datos (MCD)"
 degree: "Magíster en Ciencia de Datos"
@@ -114,9 +119,9 @@ Pero, si quieres contribuir de forma más activa, puedes hacerlo de las siguient
 
 ## INTEC
 
-![INTEC](https://raw.githubusercontent.com/adatar-do/tesis-rd/main/images/intec1.png)
+<img src="https://raw.githubusercontent.com/adatar-do/tesis-rd/main/images/intec1.png" style="border: 1px solid;" />
 
-![INTEC](https://raw.githubusercontent.com/adatar-do/tesis-rd/main/images/intec2.png)
+<img src="https://raw.githubusercontent.com/adatar-do/tesis-rd/main/images/intec2.png" style="border: 1px solid;" />
 
 
 # Tesis disponibles
@@ -124,3 +129,13 @@ Pero, si quieres contribuir de forma más activa, puedes hacerlo de las siguient
 ## INTEC
 
 - [de la Rosa, D. & Pérez, J. (2022). Georreferenciación de imágenes utilizando visión computacional: el caso del mapa de la República Dominicana. [Trabajo final de maestría, Instituto Tecnológico de Santo Domingo (INTEC)]. https://github.com/dnldelarosa/tesis-maestria-ciencia-datos](https://github.com/dnldelarosa/tesis-maestria-ciencia-datos)
+
+
+
+
+
+Cambios entre la versión 1 y la versión 2:
+
+- se agregó ies
+- se agregó city
+- advisers pasó a formar parte de author
