@@ -10,59 +10,63 @@ $endif$
 %
 $doc-class.tex()$
 
-$if(beamer)$
-$if(background-image)$
-\usebackgroundtemplate{%
-  \includegraphics[width=\paperwidth]{$background-image$}%
-}
-$endif$
-\usepackage{pgfpages}
-\setbeamertemplate{caption}[numbered]
-\setbeamertemplate{caption label separator}{: }
-\setbeamercolor{caption name}{fg=normal text.fg}
-\beamertemplatenavigationsymbols$if(navigation)$$navigation$$else$empty$endif$
-$for(beameroption)$
-\setbeameroption{$beameroption$}
-$endfor$
-% Prevent slide breaks in the middle of a paragraph
-\widowpenalties 1 10000
-\raggedbottom
-$if(section-titles)$
-\setbeamertemplate{part page}{
-  \centering
-  \begin{beamercolorbox}[sep=16pt,center]{part title}
-    \usebeamerfont{part title}\insertpart\par
-  \end{beamercolorbox}
-}
-\setbeamertemplate{section page}{
-  \centering
-  \begin{beamercolorbox}[sep=12pt,center]{part title}
-    \usebeamerfont{section title}\insertsection\par
-  \end{beamercolorbox}
-}
-\setbeamertemplate{subsection page}{
-  \centering
-  \begin{beamercolorbox}[sep=8pt,center]{part title}
-    \usebeamerfont{subsection title}\insertsubsection\par
-  \end{beamercolorbox}
-}
-\AtBeginPart{
-  \frame{\partpage}
-}
-\AtBeginSection{
-  \ifbibliography
-  \else
-    \frame{\sectionpage}
-  \fi
-}
-\AtBeginSubsection{
-  \frame{\subsectionpage}
-}
-$endif$
-$endif$
-$if(beamerarticle)$
-\usepackage{beamerarticle} % needs to be loaded first
-$endif$
+\usepackage{fancyhdr}
+\usepackage{background}
+\usepackage{eso-pic}
+
+% $if(beamer)$
+% % $if(background-image)$
+% % \usebackgroundtemplate{%
+% %   \includegraphics[width=\paperwidth]{$background-image$}%
+% % }
+% % $endif$
+% \usepackage{pgfpages}
+% \setbeamertemplate{caption}[numbered]
+% \setbeamertemplate{caption label separator}{: }
+% \setbeamercolor{caption name}{fg=normal text.fg}
+% \beamertemplatenavigationsymbols$if(navigation)$$navigation$$else$empty$endif$
+% $for(beameroption)$
+% \setbeameroption{$beameroption$}
+% $endfor$
+% % Prevent slide breaks in the middle of a paragraph
+% \widowpenalties 1 10000
+% \raggedbottom
+% $if(section-titles)$
+% \setbeamertemplate{part page}{
+%   \centering
+%   \begin{beamercolorbox}[sep=16pt,center]{part title}
+%     \usebeamerfont{part title}\insertpart\par
+%   \end{beamercolorbox}
+% }
+% \setbeamertemplate{section page}{
+%   \centering
+%   \begin{beamercolorbox}[sep=12pt,center]{part title}
+%     \usebeamerfont{section title}\insertsection\par
+%   \end{beamercolorbox}
+% }
+% \setbeamertemplate{subsection page}{
+%   \centering
+%   \begin{beamercolorbox}[sep=8pt,center]{part title}
+%     \usebeamerfont{subsection title}\insertsubsection\par
+%   \end{beamercolorbox}
+% }
+% \AtBeginPart{
+%   \frame{\partpage}
+% }
+% \AtBeginSection{
+%   \ifbibliography
+%   \else
+%     \frame{\sectionpage}
+%   \fi
+% }
+% \AtBeginSubsection{
+%   \frame{\subsectionpage}
+% }
+% $endif$
+% $endif$
+% $if(beamerarticle)$
+% \usepackage{beamerarticle} % needs to be loaded first
+% $endif$
 
 \usepackage{amsmath,amssymb}
 $if(fontfamily)$
@@ -149,27 +153,27 @@ $if(zero-width-non-joiner)$
   \protected\def ^^^^200c{\zerowidthnonjoiner}
 \fi
 %% End of ZWNJ support
-$endif$
-$if(beamer)$
-$if(theme)$
-\usetheme[$for(themeoptions)$$themeoptions$$sep$,$endfor$]{$theme$}
-$endif$
-$if(colortheme)$
-\usecolortheme{$colortheme$}
-$endif$
-$if(fonttheme)$
-\usefonttheme{$fonttheme$}
-$endif$
-$if(mainfont)$
-\usefonttheme{serif} % use mainfont rather than sansfont for slide text
-$endif$
-$if(innertheme)$
-\useinnertheme{$innertheme$}
-$endif$
-$if(outertheme)$
-\useoutertheme{$outertheme$}
-$endif$
-$endif$
+% $endif$
+% $if(beamer)$
+% $if(theme)$
+% \usetheme[$for(themeoptions)$$themeoptions$$sep$,$endfor$]{$theme$}
+% $endif$
+% $if(colortheme)$
+% \usecolortheme{$colortheme$}
+% $endif$
+% $if(fonttheme)$
+% \usefonttheme{$fonttheme$}
+% $endif$
+% $if(mainfont)$
+% \usefonttheme{serif} % use mainfont rather than sansfont for slide text
+% $endif$
+% $if(innertheme)$
+% \useinnertheme{$innertheme$}
+% $endif$
+% $if(outertheme)$
+% \useoutertheme{$outertheme$}
+% $endif$
+% $endif$
 % Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \IfFileExists{microtype.sty}{% use microtype if available
@@ -194,15 +198,15 @@ $if(verbatim-in-note)$
 $endif$
 \usepackage{xcolor}
 $if(geometry)$
-$if(beamer)$
-\geometry{$for(geometry)$$geometry$$sep$,$endfor$}
-$else$
+% $if(beamer)$
+% \geometry{$for(geometry)$$geometry$$sep$,$endfor$}
+% $else$
 \usepackage[$for(geometry)$$geometry$$sep$,$endfor$]{geometry}
+% $endif$
 $endif$
-$endif$
-$if(beamer)$
-\newif\ifbibliography
-$endif$
+% $if(beamer)$
+% \newif\ifbibliography
+% $endif$
 $if(listings)$
 \usepackage{listings}
 \newcommand{\passthrough}[1]{#1}
@@ -325,15 +329,33 @@ $else$
 $endif$
 $endif$
   pdfcreator={LaTeX via pandoc}}
-
   $title.tex()$
-  
-\begin{document}
 
-\begin{figure}[t]
-    \centering
-    \includegraphics[width=0.5\paperwidth]{$logo$}
-\end{figure}
+  \begin{document}
+  
+  \fancyhead[L]{}
+  \fancyhead[C]{}
+  \fancyhead[R]{}
+  \fancyfoot[L]{}
+  \fancyfoot[C]{}
+  \fancyfoot[R]{\thepage}
+
+$if(logo)$
+  \begin{figure}[t]
+      \centering
+      \includegraphics[width=0.5\paperwidth]{$logo$}
+  \end{figure}
+$endif$
+
+
+$if(bg)$
+  \backgroundsetup{
+    position=current page.south west,
+    angle=0,
+    nodeanchor=south west,
+    contents={\includegraphics[width=0.02\paperwidth,height=0.02\paperheight]{$bg$}}
+  }
+$endif$
 
 $before-body.tex()$
 $for(include-before)$
@@ -357,7 +379,24 @@ $endfor$
     $city$ \\
     $date$
 \end{center}
+
+\thispagestyle{empty}
+\pagenumbering{roman}
+\setcounter{page}{0}
+
 \newpage
+
+
+$if(bg)$
+  \backgroundsetup{
+    position=current page.south west,
+    angle=0,
+    nodeanchor=south west,
+    contents={\includegraphics[width=0.02\paperwidth,height=0.02\paperheight]{$white$}}
+  }
+$endif$
+
+
 $toc.tex()$
 $if(linestretch)$
 \setstretch{$linestretch$}
@@ -366,6 +405,61 @@ $if(has-frontmatter)$
 \mainmatter
 $endif$
 \newpage
+
+\thispagestyle{empty}
+
+\begin{center}
+  \fontsize{18}{16}\selectfont\textbf{$title$}
+\end{center}
+
+\begin{center}
+  \fontsize{14}{16}\selectfont\textbf{$subtitle$}
+\end{center}
+
+\vspace{18pt}
+
+\begin{center}
+  $for(authors)$
+    $it.name.literal$
+    \\
+    \vspace{12pt}
+  $endfor$
+\end{center}
+
+
+
+$for(abstracts)$ 
+\textbf{$it.title$} \\ \\
+% \newline
+% \newline
+$it.content$
+
+\begin{description}
+  $for(it.keywords)$
+  \item[$it.title$:] $it.content$
+  $endfor$
+\end{description}
+
+$sep$ 
+$endfor$
+
+
+
+
+
+
+
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+
+% \fancyhead[L]{}
+\fancyhead[C]{$title$}
+% \fancyhead[R]{}
+\fancyfoot[L]{\MakeUppercase{$program$}}
+% \fancyfoot[C]{}
+\fancyfoot[R]{\thepage}
 $body$
 
 $before-bib.tex()$

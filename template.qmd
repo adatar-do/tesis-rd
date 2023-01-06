@@ -24,8 +24,8 @@ abstracts:
           content: "Computer vision, georeferencing"
 date: today
 format:
-  intec-docx: default
   intec-pdf: default
+  intec-docx: default
   intec-html: default
 execute: 
   cache: true
@@ -40,23 +40,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. [@quarto] Phasellus sol
 
 # Planteamiento del problema
 
-```{r}
-#| label: tbl-cars
-#| tbl-cap: "Cars"
-
-head(cars)
-```
-
-
 ## Objetivo general
-
-```{r}
-#| label: fig-cars
-#| fig-cap: "Cars"
-
-plot(cars)
-```
-
 
 ## Objetivos específicos
 
