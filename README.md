@@ -59,7 +59,11 @@ Además, al estar basado en Quarto, `tesis-rd` te permite utilizar <a href="http
 
 ## Instalación
 
-> Quarto introdujo muchos cambios en el API de las extensiones en la versión 1.2.0. Esta versión de `tesis-rd` es compatible con Quarto 1.2.0 o superior.
+> Si no sabes que es **Quarto** inicia aquí: [https://adatar.do/blog/quarto/mas-que-rmarkdown-2.0.html](https://adatar.do/blog/quarto/mas-que-rmarkdown-2.0.html)
+
+**Instalación de Quarto:**
+
+Sigue los pasos indicados aquí para [instalar Quarto](https://quarto.org/docs/get-started/) en tu sistema operativo.
 
 **Opción 1:** Si ya iniciaste tu proyecto, ejecute el siguiente comando en la línea de comandos:
 
