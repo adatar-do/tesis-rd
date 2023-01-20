@@ -24,7 +24,7 @@ local function make_cover (doc)
   local pos = 1
 
   -- Degree
-  degree = pandoc.Div('Para cumplir con parte de los requerimientos establecidos para obtener el título de ' .. pandoc.utils.stringify(doc.meta.degree))
+  degree = pandoc.Div(pandoc.utils.stringify(doc.meta.req) .. pandoc.utils.stringify(doc.meta.degree))
   degree["attr"]["attributes"]["custom-style"] = 'Cover Text'
   table.insert(doc.blocks, pos, degree)
   pos = pos + 1
@@ -45,7 +45,11 @@ local function make_cover (doc)
   local authors = {}
   for _, as in pairs(doc.meta.authors) do
     local res = {}
-    local id = as.id[1]
+    if as.id then
+      id = as.id[1]
+    else 
+      id = pandoc.Str('')
+    end
     res[#res + 1] = pandoc.utils.stringify(as.name.literal)
     table.insert(authors, res[#res])
     author_id = {'(ID: ', id.text, ')'}
@@ -56,34 +60,34 @@ local function make_cover (doc)
     pos = pos + 1
   end
 
-  -- Advisers
-  local advisers_title = ''
-  if #doc.meta.advisers > 1 then
-    advisers_title = "Asesores:"
-  end
-  if #doc.meta.advisers == 1 then
-    advisers_title = "Asesor:"
-  end 
-  advisers_title = pandoc.Div(pandoc.Plain(advisers_title))
-  advisers_title["attr"]["attributes"]["custom-style"] = 'Cover Title'
-  table.insert(doc.blocks, pos, advisers_title)
-  pos = pos + 1
+  -- -- Advisers
+  -- local advisers_title = ''
+  -- if #doc.meta.advisers > 1 then
+  --   advisers_title = "Asesores:"
+  -- end
+  -- if #doc.meta.advisers == 1 then
+  --   advisers_title = "Asesor:"
+  -- end 
+  -- advisers_title = pandoc.Div(pandoc.Plain(advisers_title))
+  -- advisers_title["attr"]["attributes"]["custom-style"] = 'Cover Title'
+  -- table.insert(doc.blocks, pos, advisers_title)
+  -- pos = pos + 1
 
 
-  local advisers = {}
-  for _, as in pairs(doc.meta.advisers) do
-    adviser = pandoc.Div(pandoc.utils.stringify(as))
-    adviser["attr"]["attributes"]["custom-style"] = 'Cover Text'
-    table.insert(doc.blocks, pos, adviser)
-    table.insert(authors, pandoc.utils.stringify(as))
-    pos = pos + 1
-  end
+  -- local advisers = {}
+  -- for _, as in pairs(doc.meta.advisers) do
+  --   adviser = pandoc.Div(pandoc.utils.stringify(as))
+  --   adviser["attr"]["attributes"]["custom-style"] = 'Cover Text'
+  --   table.insert(doc.blocks, pos, adviser)
+  --   table.insert(authors, pandoc.utils.stringify(as))
+  --   pos = pos + 1
+  -- end
 
   table.insert(doc.blocks, pos, pandoc.Str("\n"))
   pos = pos + 1
 
   -- Institution, Area and Program
-  institution = pandoc.Div(pandoc.Str("Instituto Tecnológico de Santo Domingo"))
+  institution = pandoc.Div(pandoc.Str(pandoc.utils.stringify(doc.meta.ies)))
   institution["attr"]["attributes"]["custom-style"] = 'Cover Text'
   table.insert(doc.blocks, pos, institution)
   pos = pos + 1
@@ -102,7 +106,7 @@ local function make_cover (doc)
   pos = pos + 1
   
   -- City and Country
-  city = pandoc.Div(pandoc.Str("Santo Domingo, RD"))
+  city = pandoc.Div(pandoc.Str(pandoc.utils.stringify(doc.meta.city)))
   city["attr"]["attributes"]["custom-style"] = 'Cover Right'
   table.insert(doc.blocks, pos, city)
   pos = pos + 1

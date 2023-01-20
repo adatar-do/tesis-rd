@@ -4,11 +4,13 @@ subtitle: "Que el formato no sea un problema y el código no te quite el sueño"
 author: 
     - name: "Daniel E. de la Rosa"
       id: 1041951
-advisers: 
-    - "Juan Pérez"
+    - name: "Juan Pérez"
+      id: false
+ies: "Instituto Tecnológico de Santo Domingo"
 area: Área de ingenierías
 program: "Maestría en Ciencia de Datos (MCD)"
 degree: "Magíster en Ciencia de Datos"
+city: "Santo Domingo, República Dominicana"
 abstracts:
     - title: Resumen
       content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin ligula eu leo tincidunt, quis scelerisque magna dapibus. Sed eget ipsum vel arcu vehicula ullamcorper"
@@ -22,8 +24,11 @@ abstracts:
           content: "Computer vision, georeferencing"
 date: today
 format:
+  intec-pdf: default
   intec-docx: default
   intec-html: default
+execute: 
+  cache: true
 bibliography: bibliography.bib
 ---
 

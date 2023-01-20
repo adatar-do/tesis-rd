@@ -3,3 +3,5 @@
 /*.docx
 /*.html
 /.luarc.json
+georre*
+*_cache

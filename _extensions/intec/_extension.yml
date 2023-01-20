@@ -1,17 +1,29 @@
 title: Tesis INTEC
 author: Daniel E. de la Rosa
-version: 1.1.0
-quarto-required: 1.2.*
+version: 1.0.0
+quarto-required: ">=1.2.198"
 contributes:
   formats:
+    common:
+      toc-title: "Tabla de Contenidos"
+      req: "Para cumplir con parte de los requerimientos establecidos para obtener el título de "
+      date-format: long
+      lang: es
+      csl: apa-numeric-superscript-brackets.csl
+      number-sections: true
+    pdf:
+      toc: true
+      lof: true
+      lot: true
+      logo: logo.png
+      bg: back.jpg
+      white: white.png
+      template: template.tex
+      template-partials:
+        - "partials/title.tex"
+      pagestyle: fancy
     html:
       toc: true
-      number-sections: true
-      csl: apa-numeric-superscript-brackets.csl
-    pdf: default
     docx:
       filters: [cover.lua, summary.lua, tocs.lua, header.lua, footer.lua]
       reference-doc: custom-reference-doc.docx
-      csl: apa-numeric-superscript-brackets.csl
-      toc: false
-      number-sections: true
